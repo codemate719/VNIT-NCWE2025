@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link rel="stylesheet" href="/assets/output.css"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="flex">
+  <!-- Sidebar (Included in all pages) -->
+  <div id="sidebar-container"></div>
+
+  <div class="flex-col w-full lg:ml-72">
+    <!-- Header -->
+    <header class="relative min-h-[30vh] py-1 shadow-md bg-gray-200 flex justify-center items-center">
+      <!-- Background Image with Opacity -->
+      <div class="absolute inset-0 bg-[url('/assets/images/host-institute.jpg')] bg-cover bg-center opacity-20"></div>
+      <button id="toggle-sidebar" class="lg:hidden absolute top-4 left-0 bg-blue-900 text-white p-2 rounded-lg z-50 ml-4">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Content -->
+      <div class="relative z-10">
+        <div class="container mx-auto flex justify-center flex-col lg:flex-row items-center p-2 px-12">
+          <img src="/assets/images/ncwe-logo.png" alt="Conference Logo" class="w-48 md:54 lg:w-60">
+          <div class="text-center lg:text-left flex flex-col items-center lg:items-end p-2">
+            <h1 class="text-3xl lg:text-4xl text-blue-900 font-bold lg:text-end">
+             <span class="text-[#027fc7]"> National </span> <span class="text-[#393287]"> Conference on </span> <span class="text-[#e3194b]">Wind Engineering</span>
+            <!-- National Conference on Wind Engineering -->
+            <div><span class="block lg:inline font-black">(NCWE-2025)</span></div>  
+            </h1>
+            <p
+              class="text-lg max-w-80 lg:w-80 bg-blue-900 text-end px-2 text-white p-1 rounded-lg lg:rounded-tr-none lg:rounded-bl-none lg:rounded-br-none lg:text-xl lg:rounded-tl-3xl font-black mt-2">
+              14<sup>th</sup> & 15<sup>th</sup> November 2025
+            </p>
+            <p class="text-xl lg:text-2xl text-blue-9000 mt-2 lg:text-end font-medium">
+              Department of Applied Mechanics, VNIT Nagpur
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Content Section -->
+    <main class="flex-grow bg-white shadow-md m-2">
+      <!-- -------------------#-------------------Middle Section---------------------#--------------------- -->
+      <div class="mx-auto min-h-screen">
+        <h1 class="text-2xl md:text-3xl font-bold text-center text-blue-900 m-4 mt-12">Schedule for NCWE 2025</h1>
+        <p class="text-center">Link will be updated soon.</p>
+        <div class="max-w-7xl mx-auto bg-white p-5">
+          <!-- <div class="flex flex-col md:flex-row">
+            <div class="md:w-1/4 w-full border-r">
+              <button class="tab p-3 bg-black text-white w-full text-left border-b border-gray-300"
+                onclick="showSchedule('day1', this)">14 Nov</button>
+              <button class="tab p-3 w-full text-left border-b border-gray-300" onclick="showSchedule('day2', this)">15
+                Nov</button>
+            </div>
+            <div class="md:w-3/4 w-full p-5" id="schedule-content">
+              <div id="day1" class="schedule">
+                <h2 class="text-lg font-semibold mb-2">14th November</h2>
+                <div class="overflow-x-auto">
+                  <table class="w-full border-collapse border border-gray-300">
+                    <tr class="bg-gray-200">
+                      <th class="border p-2 w-32">Time</th>
+                      <th class="border p-2">Event</th>
+                      <th class="border p-2"></th>
+                      <th class="border p-2"></th>
+                      <th class="border p-2"></th>
+                      <th class="border p-2"></th>
+                      <th class="border p-2"></th>
+                    </tr>
+                    <tr>
+                      <td class="border p-2">08:00 AM - 08:45 AM</td>
+                      <td class="border p-2" colspan="6">To be updated</td>
+
+                    </tr>
+                    <tr>
+                      <td class="border p-2">09:00 AM - 09:45 AM</td>
+                      <td class="border p-2" colspan="6">To be updated</td>
+                    </tr>
+                    <tr>
+                      <td class="border p-2">09:45 AM - 10:15 AM</td>
+                      <td class="border p-2" colspan="6">To be updated</td>
+                    </tr>
+                    <tr>
+                      <td class="border p-2"></td>
+                      <td class="border p-2" colspan="6">To be updated</td>
+                    </tr>
+                    <tr>
+                      <td class="border p-2" rowspan="4"></td>
+                      <td class="border p-2">To be updated</td>
+                      <td class="border p-2">To be updated</td>
+                      <td class="border p-2">To be updated</td>
+                      <td class="border p-2">To be updated</td>
+                      <td class="border p-2">To be updated</td>
+                      <td class="border p-2">To be updated</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+              <div id="day2" class="schedule hidden">
+                <h2 class="text-lg font-semibold mb-2">15th November</h2>
+                <div class="overflow-x-auto"> 
+                  <table class="w-full border-collapse border border-gray-300">
+                    <tr class="bg-gray-200">
+                      <th class="border p-2 w-32">Time</th>
+                      <th class="border p-2">Event</th>
+                      <th class="border p-2"></th>
+                      <th class="border p-2"></th>
+                      <th class="border p-2"></th>
+                      <th class="border p-2"></th>
+                      <th class="border p-2"></th>
+                    </tr>
+                    <tr>
+                      <td class="border p-2">08:00 AM - 08:45 AM</td>
+                      <td class="border p-2" colspan="6">To be updated</td>
+
+                    </tr>
+                    <tr>
+                      <td class="border p-2">09:00 AM - 09:45 AM</td>
+                      <td class="border p-2" colspan="6">To be updated</td>
+                    </tr>
+                    <tr>
+                      <td class="border p-2">09:45 AM - 10:15 AM</td>
+                      <td class="border p-2" colspan="6">To be updated</td>
+                    </tr>
+                    <tr>
+                      <td class="border p-2"></td>
+                      <td class="border p-2" colspan="6">To be updated</td>
+                    </tr>
+                    <tr>
+                      <td class="border p-2" rowspan="4"></td>
+                      <td class="border p-2">To be updated</td>
+                      <td class="border p-2">To be updated</td>
+                      <td class="border p-2">To be updated</td>
+                      <td class="border p-2">To be updated</td>
+                      <td class="border p-2">To be updated</td>
+                      <td class="border p-2">To be updated</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+        <!-- Back to Top Button -->
+        <button id="back-to-top"
+          class="fixed bottom-4 hidden right-4 bg-[#444] text-white p-4 rounded-md shadow-md duration-300 opacity-0 pointer-events-none transition-all ease-in-out text-sm"
+          aria-label="Back to top">
+          <i class="fas fa-chevron-up text-sm"></i>
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </div>
+  <div id="sidebar-overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"></div>
+
+  <script src="/script.js"></script>
+  <script>
+    function showSchedule(day, element) {
+      // Hide all schedule contents
+      document.querySelectorAll('.schedule').forEach(el => el.classList.add('hidden'));
+      document.getElementById(day).classList.remove('hidden');
+
+      // Remove active styles from all tabs
+      document.querySelectorAll('.tab').forEach(el => el.classList.remove('bg-black', 'text-white'));
+
+      // Add active style to clicked tab
+      element.classList.add('bg-black', 'text-white');
+    }
+
+  </script>
+</body>
+
+</html>

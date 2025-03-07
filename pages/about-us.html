@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link rel="stylesheet" href="/assets/output.css"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="flex">
+  <!-- Sidebar -->
+  <div id="sidebar-container"></div>
+
+  <div class="flex-col w-full lg:ml-72 min-h-screen">
+    <!-- Header -->
+    <header class="relative min-h-[30vh] py-1 shadow-md bg-gray-200 flex justify-center items-center">
+      <!-- Background Image with Opacity -->
+      <div class="absolute inset-0 bg-[url('/assets/images/host-institute.jpg')] bg-cover bg-center opacity-20"></div>
+      <button id="toggle-sidebar" class="lg:hidden absolute top-4 left-0 bg-blue-900 text-white p-2 rounded-lg z-50 ml-4">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Content -->
+      <div class="relative z-10">
+        <div class="container mx-auto flex justify-center flex-col lg:flex-row items-center p-2 px-12">
+          <img src="/assets/images/ncwe-logo.png" alt="Conference Logo" class="w-48 md:54 lg:w-60">
+          <div class="text-center lg:text-left flex flex-col items-center lg:items-end p-2">
+            <h1 class="text-3xl lg:text-4xl text-blue-900 font-bold lg:text-end">
+             <span class="text-[#027fc7]"> National </span> <span class="text-[#393287]"> Conference on </span> <span class="text-[#e3194b]">Wind Engineering</span>
+            <!-- National Conference on Wind Engineering -->
+            <div><span class="block lg:inline font-black">(NCWE-2025)</span></div>  
+            </h1>
+            <p
+              class="text-lg max-w-80 lg:w-80 bg-blue-900 text-end px-2 text-white p-1 rounded-lg lg:rounded-tr-none lg:rounded-bl-none lg:rounded-br-none lg:text-xl lg:rounded-tl-3xl font-black mt-2">
+              14<sup>th</sup> & 15<sup>th</sup> November 2025
+            </p>
+            <p class="text-xl lg:text-2xl text-blue-9000 mt-2 lg:text-end font-medium">
+              Department of Applied Mechanics, VNIT Nagpur
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Content Section -->
+    <main class="flex-grow bg-white shadow-md m-2">
+      <!-- -------------------#-------------------Middle Section---------------------#--------------------- -->
+      <div class="mx-auto">
+        <div class="mx-auto bg-white p-4 flex flex-col md:w-5/6">
+            <div id="about-iswe" class="text-center md:text-left flex flex-col items-center">
+              <hr class="my-2 border-t-2 w-12 border-gray-200" />
+              <h1 class="text-2xl md:text-3xl font-bold text-center text-blue-900">
+                About ISWE
+              </h1>
+            </div>
+            <div class="mx-auto px-2 py-6 flex flex-col">
+              <p class="text-justify text-lg px-4">
+                The Indian Society of Wind Engineering (ISWE) was founded in 1993
+                and at present it has members all over the country. The main activities
+                of ISWE are to bring academicians, researchers, industry personnel and
+                students under one umbrella towards the cause of wind engineering
+                studies in the country.
+              </p>
+            </div>
+            <div id="about-institute" class="text-center md:text-left flex flex-col items-center">
+              <hr class="my-2 border-t-2 w-12 border-gray-200" />
+              <h1 class="text-2xl md:text-3xl font-bold text-center text-blue-900">
+                About Host Institute
+              </h1>
+            </div>
+            <div class="mx-auto px-2 py-6 flex flex-col">
+              <p class="text-justify text-lg px-4">
+                Visvesvaraya National Institute of Technology (VNIT), Nagpur,
+                named after the eminent engineer, planner, and statesman of the
+                country Sir M. Visvesvaraya, is one of the thirty National
+                Institutes of Technology in the country. It has nine
+                undergraduate, eighteen post graduate programs with a total
+                student strength of 5000, which includes about 500 PhD scholars.
+                A lush-green VNIT campus is sprawled over 214 acres, located
+                centrally in the city of Nagpur, with residential facility for
+                about 3500 students. Historically, this institute started as a
+                Government Engineering College in 1956, got converted into
+                Regional Engineering College in 1960 and eventually got the
+                status of National Institute in 2002. Today, VNIT is Institute
+                of National importance and has ascended itself from a
+                teaching-oriented campus to a blend of research and teaching.
+                Institute has many R&D projects funded through Government and
+                private agencies.
+              </p>
+            </div>
+            <div class="flex justify-center px-4">
+              <img src="/assets/images/host-institute.jpg" alt="VNIT image" class="rounded-2xl shadow-xl md:w-3/5" />
+            </div>
+            <div id="about-department" class="text-center md:text-left mt-8 flex flex-col items-center">
+              <hr class="my-2 border-t-2 w-12 border-gray-200" />
+              <h1 class="text-2xl md:text-3xl font-bold text-center text-blue-900">
+                About the Department of Applied Mechanics
+              </h1>
+            </div>
+            <div class="mx-auto px-2 py-6 flex flex-col">
+              <p class="text-justify text-lg px-4">
+                Established in 1962, the Department of Applied Mechanics offers
+                two post graduate programs i.e. M. Tech. in Structural
+                Engineering and M. Tech. in Structural Dynamics and Earthquake
+                Engineering. The department offers structural engineering
+                courses to
+                <strong> B. Tech. (Civil) and B.Arch. programs </strong> along
+                with the course of Engineering Mechanics to the first year B.
+                Tech. students. <br />
+                Department is actively involved in various R & D projects from
+                Government, Public and Private Agencies. Department is pursuing
+                activities related to earthquake, wind, concrete corrosion,
+                advanced engineered materials, blast, impact and fire
+                engineering. Department team has visited earthquake affected
+                areas such as <strong>Bhuj, Andaman and Nepal.</strong> <br />
+                <span class="pt-4">Consultancy work of structural design and scrutiny of
+                  structures like water tanks, bridges, buildings, and other
+                  structures are being undertaken by the department. The
+                  department is also involved in the structural health
+                  assessment of various structures. Department has facilities
+                  for testing of materials, proof load testing, non-destructive
+                  testing, vibration measurement of structures.</span>
+              </p>
+            </div>
+            <div class="flex justify-center px-4">
+              <img src="/assets/images/department.png" alt="VNIT image" class="rounded-2xl shadow-xl md:w-3/5" />
+            </div>
+            <div id="about-nagpur" class="text-center md:text-left mt-8 flex flex-col items-center">
+              <hr class="my-2 border-t-2 w-12 border-gray-200" />
+              <h1 class="text-2xl md:text-3xl font-bold text-center text-blue-900">
+                About Nagpur
+              </h1>
+            </div>
+            <div class="mx-auto px-2 py-6 flex flex-col">
+              <p class="text-justify text-lg px-4">
+                Nagpur is the third largest city and the winter capital of
+                Maharashtra State. Nagpur lies precisely at the centre of the
+                country with the Zero Mile Marker indicating the geographical
+                centre of India. In the latest rankings of 100 developing smart
+                cities given by the Union Ministry of Urban Development, Nagpur
+                stood first in Maharashtra state and second in India. Nagpur
+                Metro has entered Guinness Book of World Records for being the
+                longest double-decker viaduct metro measuring 3.14 km on Wardha
+                Road. Known as the “Orange City”, Nagpur has officially become
+                the greenest, safest and most technologically developed city in
+                the Maharashtra state. Nagpur is also known as the, “Tiger
+                Capital of India” as it connects many Tiger Reserves in India to
+                the world. It is well connected to all the major cities of the
+                country by air and has also international connectivity. Needless
+                to say, Nagpur is a major railway junction of North-South and
+                East-West railway lines.
+              </p>
+            </div>
+            <div class="flex flex-col items-center justify-center px-4">
+              <img src="/assets/images/nagpur.jpg" alt="VNIT image" class="rounded-2xl shadow-xl md:w-3/5 m-2" />
+              <img src="/assets/images/dimaond-rail.jpg" alt="VNIT image" class="rounded-2xl shadow-xl md:w-3/5 m-2" />
+              <img src="/assets/images/metro.jpg" alt="VNIT image" class="rounded-2xl shadow-xl md:w-3/5 m-2" />
+              <img src="/assets/images/koradi-thermal.jpg" alt="VNIT image" class="rounded-2xl shadow-xl md:w-3/5 m-2" />
+            </div>
+          </div>
+        <!-- Back to Top Button -->
+        <button id="back-to-top"
+          class="fixed bottom-4 hidden right-4 bg-[#444] text-white p-4 rounded-md shadow-md duration-300 opacity-0 pointer-events-none transition-all ease-in-out text-sm"
+          aria-label="Back to top">
+          <i class="fas fa-chevron-up text-sm"></i>
+          <!-- Increased icon size -->
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </div>
+  <div id="sidebar-overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"></div>
+
+  <script src="/script.js"></script>
+</body>
+
+</html>

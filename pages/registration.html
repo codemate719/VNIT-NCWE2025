@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link rel="stylesheet" href="/assets/output.css"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+</head>
+
+<body class="flex">
+  <!-- Sidebar (Included in all pages) -->
+  <div id="sidebar-container"></div>
+
+  <div class="flex-col w-full lg:ml-72">
+    <!-- Header -->
+    <header class="relative min-h-[30vh] py-1 shadow-md bg-gray-200 flex justify-center items-center">
+      <!-- Background Image with Opacity -->
+      <div class="absolute inset-0 bg-[url('/assets/images/host-institute.jpg')] bg-cover bg-center opacity-20"></div>
+      <button id="toggle-sidebar" class="lg:hidden absolute top-4 left-0 bg-blue-900 text-white p-2 rounded-lg z-50 ml-4">
+        <i class="fas fa-bars"></i>
+      </button>
+      <!-- Content -->
+      <div class="relative z-10">
+        <div class="container mx-auto flex justify-center flex-col lg:flex-row items-center p-2 px-12">
+          <img src="/assets/images/ncwe-logo.png" alt="Conference Logo" class="w-48 md:54 lg:w-60">
+          <div class="text-center lg:text-left flex flex-col items-center lg:items-end p-2">
+            <h1 class="text-3xl lg:text-4xl text-blue-900 font-bold lg:text-end">
+             <span class="text-[#027fc7]"> National </span> <span class="text-[#393287]"> Conference on </span> <span class="text-[#e3194b]">Wind Engineering</span>
+            <!-- National Conference on Wind Engineering -->
+            <div><span class="block lg:inline font-black">(NCWE-2025)</span></div>  
+            </h1>
+            <p
+              class="text-lg max-w-80 lg:w-80 bg-blue-900 text-end px-2 text-white p-1 rounded-lg lg:rounded-tr-none lg:rounded-bl-none lg:rounded-br-none lg:text-xl lg:rounded-tl-3xl font-black mt-2">
+              14<sup>th</sup> & 15<sup>th</sup> November 2025
+            </p>
+            <p class="text-xl lg:text-2xl text-blue-9000 mt-2 lg:text-end font-medium">
+              Department of Applied Mechanics, VNIT Nagpur
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Content Section -->
+    <main class="flex-grow bg-white shadow-md m-2">
+      <!-- -------------------#-------------------Middle Section---------------------#--------------------- -->
+      <div class="mx-auto">
+        <div class="bg-white p-6 shadow-lg">
+          <!-- -----------------#-----------------Left Column Section---------------------#--------------------- -->
+          <div>
+            <div class="text-center md:text-left flex flex-col items-center">
+              <hr class="my-2 border-t-2 w-12 border-gray-200" />
+              <h1 class="text-2xl md:text-3xl font-bold text-center text-blue-900">
+                Registration
+              </h1>
+            </div>
+            <div class="max-w-2xl mx-auto bg-white p-2 mt-8">
+              <h2 class="bg-blue-900 text-white text-lg font-semibold px-4 py-2 rounded text-center">Indian Delegates
+                (Inclusive of taxes)</h2>
+              <div class="overflow-x-auto">
+                <table class="w-full border mt-2 min-w-full">
+                  <tr class="border bg-gray-100">
+                    <td class="p-3 border w-2/3">Students and Research Scholars</td>
+                    <td class="p-3 border w-1/3">Rs. 4500.00</td>
+                  </tr>
+                  <tr class="border">
+                    <td class="p-3 border w-2/3">Faculty, Scientists & Industry</td>
+                    <td class="p-3 border w-1/3">Rs. 8000.00</td>
+                  </tr>
+                  <tr class="border bg-gray-100">
+                    <td class="p-3 border w-2/3">ISWE / IEI / IAStructE Members</td>
+                    <td class="p-3 border w-1/3">Rs. 7500.00</td>
+                  </tr>
+                  <tr class="border">
+                    <td class="p-3 border w-2/3">Accompanying Person</td>
+                    <td class="p-3 border w-1/3">Rs. 3500.00</td>
+                  </tr>
+                </table>
+              </div>
+
+              <h2 class="bg-blue-900 text-white text-lg font-semibold px-4 py-2 rounded text-center mt-6">Foreign
+                Delegates</h2>
+              <div class="overflow-x-auto">
+                <table class="w-full border mt-2 min-w-full">
+                  <tr class="border bg-gray-100">
+                    <td class="p-3 border w-2/3">Students and Research Scholars</td>
+                    <td class="p-3 border w-1/3">USD 50</td>
+                  </tr>
+                  <tr class="border">
+                    <td class="p-3 border w-2/3">Faculty, Scientists & Industry</td>
+                    <td class="p-3 border w-1/3">USD 100</td>
+                  </tr>
+                </table>
+              </div>
+
+              <div class="mt-12 text-sm text-gray-700">
+                <ul class="list-disc pl-6 space-y-2 md:text-xl text-justify">
+                  <li>This registration fee includes 18% GST charges.</li>
+                  <li>Maximum two paper presentations are allowed under one full delegate registration.</li>
+                  <li>Only one paper presentation is allowed under one student registration.</li>
+                  <li>At least one of the authors of every paper must register for the conference as an author and
+                    present the paper for it to be included in the conference proceedings of NCWE-25.</li>
+                  <li>If more than one author of a paper wishes to attend the conference, all such authors need to be
+                    registered separately by paying applicable registration fees.</li>
+                  <li>Certificate will be provided only to the presenting author.</li>
+                  <li>Please note that no refund will be made in
+                    case of cancellation of registrations.</li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="max-w-2xl mx-auto bg-gray-100 border border-blue-300 shadow-lg rounded-lg p-6 relative mt-12">
+              <h2 class="bg-blue-900 text-white text-lg font-semibold px-4 py-2 rounded-t w-fit">Payment Gateway:</h2>
+              <div class="mt-4 text-gray-700 text-sm">
+                  <ol class="list-decimal pl-6 space-y-2 md:text-xl">
+                      <li>Go to <a href="https://pay.vnit.ac.in/home" class="text-blue-900 font-bold">https://pay.vnit.ac.in/home</a></li>
+                      <li>Select payment category as <span class="font-bold text-blue-900">“Courses/Seminar/Workshop”</span></li>
+                      <li>Select name of the event as <span class="font-bold text-blue-900">“NCWE-25”</span></li>
+                      <li>Fill in the further required details and click on the <span class="text-blue-900 font-bold">SUBMIT button.</span></li>
+                      <li>Make the payment.</li>
+                      <li>After making the payment, kindly save the registration receipt for future reference.</li>
+                      <li>Fill the required payment details in the <span class="text-blue-900 font-bold">NCWE-25 Registration Form</span> to confirm your registration.</li>
+                  </ol>
+              </div>
+          </div>
+          </div>
+        </div>
+        <!-- Back to Top Button -->
+        <button id="back-to-top"
+          class="fixed bottom-4 hidden right-4 bg-[#444] text-white p-4 rounded-md shadow-md duration-300 opacity-0 pointer-events-none transition-all ease-in-out text-sm"
+          aria-label="Back to top">
+          <i class="fas fa-chevron-up text-sm"></i>
+          <!-- Increased icon size -->
+        </button>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+  </div>
+  <div id="sidebar-overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden"></div>
+  <script src="/script.js"></script>
+</body>
+
+</html>
