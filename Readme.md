@@ -24,7 +24,7 @@ This project initially used **Tailwind CDN**, but for performance, unused styles
 
 If you need to regenerate `output.css`, run:
 ```sh
-npx tailwindcss -i style.css -o output.css --minify
+npx tailwindcss -i ./assets/style.css -o ./assets/output.css --minify
 ```
 ##  Technical Details
 - **Technologies Used**: HTML, Tailwind CSS, JavaScript
