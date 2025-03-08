@@ -57,38 +57,96 @@
                         <!-- -----------------------------------------------------Table--------------------------------------------------------- -->
                         <div class="container mx-auto mt-6 shadow-md overflow-hidden">
                             <div class="overflow-x-auto">
-                                <table class="min-w-full border-collapse">
-                                    <tr class="bg-[#ebf5f4] border-b-2 border-[#0e9bc2]">
-                                        <th class="text-left px-4 text-[#244696] font-bold uppercase pb-3">
-                                            <span class="text-orange-600 text-lg">•</span> Chief Patron
-                                        </th>
-                                        <td class="py-4 px-4 font-bold text-[#244696] text-lg">
-                                            <span class="text-orange-500 text-sm">➤</span>
-                                            Shri Madabhushi Madan Gopal
-                                        </td>
-                                        <td class="py-4 px-4 font-medium">Chairman, VNIT Nagpur</td>
-                                    </tr>
-                                    <tr class="bg-[#ebf5f4] border-b-2 border-[#0e9bc2]">
-                                        <th class="text-left px-4 text-[#244696] font-bold uppercase pb-3">
-                                            <span class="text-orange-600 text-lg">•</span> Patron
-                                        </th>
-                                        <td class="py-4 px-4 font-bold text-[#244696] text-lg">
-                                            <span class="text-orange-500 text-sm">➤</span>
-                                            Prof. P L Patel
-                                        </td>
-                                        <td class="py-4 px-4 font-medium">Director, VNIT Nagpur</td>
-                                    </tr>
-                                    <tr class="bg-[#ebf5f4] border-b-2 border-[#0e9bc2]">
-                                        <th class="text-left px-4 text-[#244696] font-bold uppercase pb-3">
-                                            <span class="text-orange-600 text-lg">•</span> Conference Chair
-                                        </th>
-                                        <td class="py-4 px-4 font-bold text-[#244696] text-lg">
-                                            <span class="text-orange-500 text-sm">➤</span>
-                                            Prof. Sangeeta Gadve
-                                        </td>
-                                        <td class="py-4 px-4 font-medium">HoD, Department of Applied Mechanics, VNIT Nagpur</td>
-                                    </tr>
-                                </table>
+                                <div class="w-full">
+                                    <!-- Table for Larger Screens -->
+                                    <div class="hidden md:block">
+                                        <table class="w-full border-collapse">
+                                            <tbody class="divide-y divide-[#0e9bc2]">
+                                                <tr class="bg-[#ebf5f4]">
+                                                    <td class="px-4 py-3 font-bold text-[#244696]">
+                                                        <span class="inline-flex items-center gap-2">
+                                                            <span class="text-orange-600 text-lg">•</span> Chief Patron
+                                                        </span>
+                                                    </td>
+                                                    <td class="px-4 py-3 font-bold text-[#244696]">
+                                                        <span class="inline-flex text-lg items-center gap-2">
+                                                            <span class="text-orange-500 text-sm">➤</span> Shri Madabhushi Madan Gopal
+                                                        </span>
+                                                    </td>
+                                                    <td class="px-4 py-3 font-medium">Chairman, VNIT Nagpur</td>
+                                                </tr>
+                                                <tr class="bg-[#ebf5f4]">
+                                                    <td class="px-4 py-3 font-bold text-[#244696]">
+                                                        <span class="inline-flex items-center gap-2">
+                                                            <span class="text-orange-600 text-lg">•</span> Patron
+                                                        </span>
+                                                    </td>
+                                                    <td class="px-4 py-3 font-bold text-[#244696]">
+                                                        <span class="inline-flex text-lg items-center gap-2">
+                                                            <span class="text-orange-500 text-sm">➤</span> Prof. P L Patel
+                                                        </span>
+                                                    </td>
+                                                    <td class="px-4 py-3 font-medium">Director, VNIT Nagpur</td>
+                                                </tr>
+                                                <tr class="bg-[#ebf5f4]">
+                                                    <td class="px-4 py-3 font-bold text-[#244696]">
+                                                        <span class="inline-flex items-center gap-2">
+                                                            <span class="text-orange-600 text-lg">•</span> Conference Chair
+                                                        </span>
+                                                    </td>
+                                                    <td class="px-4 py-3 font-bold text-[#244696]">
+                                                        <span class="inline-flex text-lg items-center gap-2">
+                                                            <span class="text-orange-500 text-sm">➤</span> Prof. Sangeeta Gadve
+                                                        </span>
+                                                    </td>
+                                                    <td class="px-4 py-3 font-medium">HoD, Department of Applied Mechanics, VNIT Nagpur</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!-- Card Layout for Mobile -->
+                                    <div class="md:hidden space-y-4">
+                                        <div class="bg-[#ebf5f4] border-l-4 border-[#0e9bc2] p-4 rounded-lg shadow">
+                                            <p class="text-[#244696] font-bold">
+                                                <span class="inline-flex text-lg items-center gap-2">
+                                                    <span class="text-orange-500 text-sm">➤</span> Shri Madabhushi Madan Gopal
+                                                </span>
+                                            </p>
+                                            <p class="font-medium pl-6">Chairman, VNIT Nagpur</p>
+                                            <p class="font-bold text-[#244696]">
+                                                <span class="inline-flex text-sm items-center gap-2">
+                                                    <span class="text-orange-600 text-lg">•</span> <span class="pl-2">Chief Patron</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="bg-[#ebf5f4] border-l-4 border-[#0e9bc2] p-4 rounded-lg shadow">
+                                            <p class="text-[#244696] font-bold">
+                                                <span class="inline-flex text-lg items-center gap-2">
+                                                    <span class="text-orange-500 text-sm">➤</span> Prof. P L Patel
+                                                </span>
+                                            </p>
+                                            <p class="font-medium pl-6">Director, VNIT Nagpur</p>
+                                            <p class="font-bold text-[#244696]">
+                                                <span class="inline-flex text-sm items-center gap-2">
+                                                    <span class="text-orange-600 text-lg">•</span> <span class="pl-2">Patron</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                        <div class="bg-[#ebf5f4] border-l-4 border-[#0e9bc2] p-4 rounded-lg shadow">
+                                            <p class="text-[#244696] font-bold">
+                                                <span class="inline-flex text-lg items-center gap-2">
+                                                    <span class="text-orange-500 text-sm">➤</span> Prof. Sangeeta Gadve
+                                                </span>
+                                            </p>
+                                            <p class="font-medium pl-6">HoD, Department of Applied Mechanics, VNIT Nagpur</p>
+                                            <p class="font-bold text-[#244696]">
+                                                <span class="inline-flex text-sm items-center gap-2">
+                                                    <span class="text-orange-600 text-lg">•</span> <span class="pl-2">Conference Chair</span>
+                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div>
                                 <table class="min-w-full bg-white mt-12">
