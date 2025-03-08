@@ -90,11 +90,13 @@ function initSidebar() {
     function openSidebar() {
         sidebar.classList.remove("-translate-x-full");
         overlay.classList.remove("hidden");
+        body.classList.add("overflow-hidden");
     }
 
     function closeSidebar() {
         sidebar.classList.add("-translate-x-full");
         overlay.classList.add("hidden");
+        body.classList.remove("overflow-hidden");
     }
 
     function toggleSidebar() {
