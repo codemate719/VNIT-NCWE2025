@@ -71,8 +71,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
 // JavaScript for Sidebar Toggle
 function initSidebar() {
     const sidebar = document.getElementById("sidebar");
@@ -90,11 +88,13 @@ function initSidebar() {
     function openSidebar() {
         sidebar.classList.remove("-translate-x-full");
         overlay.classList.remove("hidden");
+        document.body.style.overflow = "hidden"; // 🚀 Prevent background scrolling
     }
 
     function closeSidebar() {
         sidebar.classList.add("-translate-x-full");
         overlay.classList.add("hidden");
+        document.body.style.overflow = ""; // ✅ Allow scrolling again
     }
 
     function toggleSidebar() {
@@ -121,11 +121,21 @@ function initSidebar() {
         }
     });
 
+    // Prevent scrolling issues on mobile (iOS/Android fix)
+    sidebar.addEventListener("touchmove", function (e) {
+        e.stopPropagation(); // Stop sidebar touch scrolling from affecting the page
+    });
+
+    overlay.addEventListener("touchmove", function (e) {
+        e.preventDefault(); // Prevent scrolling when touching overlay
+    });
+
     // Keep sidebar open on large screens (lg)
     window.addEventListener("resize", function () {
         if (window.innerWidth >= 1024) {
             sidebar.classList.remove("-translate-x-full");
             overlay.classList.add("hidden");
+            document.body.style.overflow = ""; // Ensure scrolling is re-enabled
         } else {
             sidebar.classList.add("-translate-x-full");
         }
