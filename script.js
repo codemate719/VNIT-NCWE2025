@@ -56,20 +56,21 @@ function highlightActiveLink() {
 document.addEventListener("DOMContentLoaded", function () {
     const backToTopBtn = document.getElementById("back-to-top");
 
-    // Show/hide button on scroll
     window.addEventListener("scroll", function () {
-        if (window.scrollY > 200) { // Show button after 200px scroll
+        if (window.scrollY > 200) { 
             backToTopBtn.classList.remove("opacity-0", "pointer-events-none", "hidden");
+            backToTopBtn.style.pointerEvents = "auto"; 
         } else {
             backToTopBtn.classList.add("opacity-0", "pointer-events-none");
+            backToTopBtn.style.pointerEvents = "none"; 
         }
     });
 
-    // Smooth scroll to top when button is clicked
     backToTopBtn.addEventListener("click", function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     });
 });
+
 
 
 // JavaScript for Sidebar Toggle
