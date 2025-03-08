@@ -14,7 +14,7 @@
   <!-- Sidebar (Included in all pages) -->
   <div id="sidebar-container"></div>
 
-  <div class="flex-col w-full lg:ml-72">
+  <div class="flex-col w-full lg:ml-64">
     <!-- Header -->
     <header class="relative min-h-[30vh] py-1 shadow-md bg-gray-200 flex justify-center items-center">
       <!-- Background Image with Opacity -->
@@ -25,7 +25,7 @@
       <!-- Content -->
       <div class="relative z-10">
         <div class="container mx-auto flex justify-center flex-col lg:flex-row items-center p-2 px-12">
-          <img src="/assets/images/ncwe-logo.png" alt="Conference Logo" class="w-48 md:54 lg:w-60">
+          <a href="/index.html"><img src="/assets/images/ncwe-logo.png" alt="Conference Logo" class="w-48 md:54 lg:w-60"></a>
           <div class="text-center lg:text-left flex flex-col items-center lg:items-end p-2">
             <h1 class="text-3xl lg:text-4xl text-blue-900 font-bold lg:text-end">
              <span class="text-[#027fc7]"> National </span> <span class="text-[#393287]"> Conference on </span> <span class="text-[#e3194b]">Wind Engineering</span>
@@ -45,10 +45,8 @@
     </header>
     <!-- Content Section -->
     <main class="flex-grow bg-white shadow-md m-2">
-      <!-- -------------------#-------------------Middle Section---------------------#--------------------- -->
       <div class="mx-auto">
         <div class="bg-white p-6 shadow-lg">
-          <!-- -----------------#-----------------Left Column Section---------------------#--------------------- -->
           <div>
             <div class="text-center md:text-left flex flex-col items-center">
               <hr class="my-2 border-t-2 w-12 border-gray-200" />
@@ -58,7 +56,7 @@
             </div>
             <div class="mx-auto px-12 py-6 flex flex-col text-center">
               <div class="max-w-4xl mx-auto bg-white p-6">
-                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 text-center my-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 text-center my-8">
                   <div>
                       <div class="flex justify-center mb-2">
                           <img src="https://img.icons8.com/ios-filled/50/4caf50/marker.png" alt="Address Icon" />
@@ -66,6 +64,15 @@
                       <h3 class="font-semibold">ADDRESS</h3>
                       <p class="text-md md:text-lg text-gray-700">Department of Applied Mechanics<br>Visvesvaraya National Institute of Technology, Nagpur<br>South Ambazari Road, Nagpur - 440010 Maharashtra (India)</p>
                   </div>
+                  <div class="relative w-full" style="padding-top: 56.25%;">
+                    <iframe 
+                        class="absolute top-0 left-0 w-full h-full"
+                        src="https://maps.google.com/maps?q=VNIT%20Nagpur&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" 
+                        allowfullscreen 
+                        loading="lazy"
+                        style="border:0;"
+                    ></iframe>
+                </div>
                   <div>
                       <div class="flex justify-center mb-2">
                           <img src="https://img.icons8.com/ios-filled/50/4caf50/new-post.png" alt="Email Icon" />
@@ -81,16 +88,6 @@
                       <p class="text-md md:text-lg text-gray-700">+91 0712 2802023</p>
                   </div>
               </div>
-                <div class="relative w-full" style="padding-top: 56.25%;"> <!-- 16:9 Aspect Ratio -->
-                  <iframe 
-                      class="absolute top-0 left-0 w-full h-full"
-                      src="https://maps.google.com/maps?q=VNIT%20Nagpur&amp;t=m&amp;z=15&amp;output=embed&amp;iwloc=near" 
-                      allowfullscreen 
-                      loading="lazy"
-                      style="border:0;"
-                  ></iframe>
-              </div>
-
             </div>
             </div>
           </div>
