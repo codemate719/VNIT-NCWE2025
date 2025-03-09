@@ -1,6 +1,9 @@
 # Ignore node_modules and package lock file
 node_modules/
 package-lock.json
+package.json
+tailwind.config.js
+style.css
 
 # Tailwind config cache
 .tailwind/
