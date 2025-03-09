@@ -1,13 +1,15 @@
-// Load Sidebar
-fetch("/includes/sidebar.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("sidebar-container").innerHTML = data;
-    highlightActiveLink(); // Highlight active page
-    initSidebar(); // Reinitialize sidebar functionality after loading
-    initDropdowns();
-  })
-  .catch(error => console.error("Error loading sidebar:", error));
+if (!document.body.classList.contains("home-page")) { 
+    // Only fetch sidebar if not on the home page
+    fetch("/includes/sidebar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("sidebar-container").innerHTML = data;
+        highlightActiveLink(); // Highlight active page
+        initSidebar(); // Reinitialize sidebar functionality after loading
+        initDropdowns();
+      })
+      .catch(error => console.error("Error loading sidebar:", error));
+  }  
 
   // JavaScript for Sidebar Toggle
 function initSidebar() {
