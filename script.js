@@ -5,73 +5,11 @@ fetch("/includes/sidebar.html")
     document.getElementById("sidebar-container").innerHTML = data;
     highlightActiveLink(); // Highlight active page
     initSidebar(); // Reinitialize sidebar functionality after loading
+    initDropdowns();
   })
   .catch(error => console.error("Error loading sidebar:", error));
 
-
-// Load Footer
-fetch("/includes/footer.html")
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById("footer").innerHTML = data;
-    highlightActiveLink(); // Highlight the active page after sidebar loads
-  })
-  .catch(error => console.error("Error loading footer:", error));
-
-// Function to highlight active page link in sidebar
-function highlightActiveLink() {
-    let links = document.querySelectorAll("aside nav a"); // Select all sidebar links
-    let currentPath = window.location.pathname; // Get current page path
-    let currentFullPath = window.location.href; // Get full URL (including hash)
-
-    let parentTabs = new Map(); // Store parent tabs for dropdown links
-
-    links.forEach(link => {
-        const linkPath = new URL(link.href, window.location.origin).pathname; // Get base path
-        const linkFullPath = link.href; // Full link (including hash)
-
-        if (currentPath === linkPath || currentFullPath === linkFullPath) { 
-            link.classList.add("bg-blue-200", "text-blue-900"); // Highlight exact matching link
-
-            // Store parent tab reference if this link is inside a dropdown
-            let parentDropdown = link.closest(".group"); // Find dropdown container
-            if (parentDropdown) {
-                let parentTab = parentDropdown.querySelector("a:first-child"); // Get main tab (About Us)
-                if (parentTab) {
-                    parentTabs.set(parentTab, true); // Mark parent tab for highlighting
-                }
-            }
-        } else {
-            link.classList.remove("bg-blue-200", "text-blue-900");
-        }
-    });
-
-    // Highlight parent tabs if any child is active
-    parentTabs.forEach((_, parentTab) => {
-        parentTab.classList.add("bg-blue-200", "text-blue-900");
-    });
-}
-
-// Back to top button
-document.addEventListener("DOMContentLoaded", function () {
-    const backToTopBtn = document.getElementById("back-to-top");
-
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > 200) { 
-            backToTopBtn.classList.remove("opacity-0", "pointer-events-none", "hidden");
-            backToTopBtn.style.pointerEvents = "auto"; 
-        } else {
-            backToTopBtn.classList.add("opacity-0", "pointer-events-none");
-            backToTopBtn.style.pointerEvents = "none"; 
-        }
-    });
-
-    backToTopBtn.addEventListener("click", function () {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
-});
-
-// JavaScript for Sidebar Toggle
+  // JavaScript for Sidebar Toggle
 function initSidebar() {
     const sidebar = document.getElementById("sidebar");
     const toggleButton = document.getElementById("toggle-sidebar");
@@ -142,5 +80,93 @@ function initSidebar() {
     });
 }
 
-// Initialize sidebar on first page load
-document.addEventListener("DOMContentLoaded", initSidebar);
+function initDropdowns() {
+    const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener("click", function (event) {
+            event.stopPropagation(); // Prevents the click from propagating to the document listener
+
+            const dropdownMenu = this.nextElementSibling; // Get the associated dropdown
+
+            // Close all other dropdowns first
+            document.querySelectorAll(".dropdown-menu").forEach(menu => {
+                if (menu !== dropdownMenu) {
+                    menu.classList.add("hidden");
+                }
+            });
+
+            // Toggle visibility of the clicked dropdown
+            dropdownMenu.classList.toggle("hidden");
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener("click", function () {
+        document.querySelectorAll(".dropdown-menu").forEach(menu => {
+            menu.classList.add("hidden");
+        });
+    });
+}
+
+// Load Footer
+fetch("/includes/footer.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("footer").innerHTML = data;
+    highlightActiveLink(); // Highlight the active page after sidebar loads
+  })
+  .catch(error => console.error("Error loading footer:", error));
+
+// Function to highlight active page link in sidebar
+function highlightActiveLink() {
+    let links = document.querySelectorAll("aside nav a"); // Select all sidebar links
+    let currentPath = window.location.pathname; // Get current page path
+    let currentFullPath = window.location.href; // Get full URL (including hash)
+
+    let parentTabs = new Map(); // Store parent tabs for dropdown links
+
+    links.forEach(link => {
+        const linkPath = new URL(link.href, window.location.origin).pathname; // Get base path
+        const linkFullPath = link.href; // Full link (including hash)
+
+        if (currentPath === linkPath || currentFullPath === linkFullPath) { 
+            link.classList.add("bg-blue-200", "text-blue-900"); // Highlight exact matching link
+
+            // Store parent tab reference if this link is inside a dropdown
+            let parentDropdown = link.closest(".group"); // Find dropdown container
+            if (parentDropdown) {
+                let parentTab = parentDropdown.querySelector("a:first-child"); // Get main tab (About Us)
+                if (parentTab) {
+                    parentTabs.set(parentTab, true); // Mark parent tab for highlighting
+                }
+            }
+        } else {
+            link.classList.remove("bg-blue-200", "text-blue-900");
+        }
+    });
+
+    // Highlight parent tabs if any child is active
+    parentTabs.forEach((_, parentTab) => {
+        parentTab.classList.add("bg-blue-200", "text-blue-900");
+    });
+}
+
+// Back to top button
+document.addEventListener("DOMContentLoaded", function () {
+    const backToTopBtn = document.getElementById("back-to-top");
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 200) { 
+            backToTopBtn.classList.remove("opacity-0", "pointer-events-none", "hidden");
+            backToTopBtn.style.pointerEvents = "auto"; 
+        } else {
+            backToTopBtn.classList.add("opacity-0", "pointer-events-none");
+            backToTopBtn.style.pointerEvents = "none"; 
+        }
+    });
+
+    backToTopBtn.addEventListener("click", function () {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+});
