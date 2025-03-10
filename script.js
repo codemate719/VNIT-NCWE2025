@@ -133,7 +133,7 @@ function highlightActiveLink() {
         const linkFullPath = link.href; // Full link (including hash)
 
         if (currentPath === linkPath || currentFullPath === linkFullPath) { 
-            link.classList.add("bg-blue-200", "text-blue-900"); // Highlight exact matching link
+            link.classList.add("bg-blue-200", "text-[#068bb4]"); // Highlight exact matching link
 
             // Store parent tab reference if this link is inside a dropdown
             let parentDropdown = link.closest(".group"); // Find dropdown container
@@ -144,13 +144,13 @@ function highlightActiveLink() {
                 }
             }
         } else {
-            link.classList.remove("bg-blue-200", "text-blue-900");
+            link.classList.remove("bg-blue-200", "text-[#068bb4]");
         }
     });
 
     // Highlight parent tabs if any child is active
     parentTabs.forEach((_, parentTab) => {
-        parentTab.classList.add("bg-blue-200", "text-blue-900");
+        parentTab.classList.add("bg-blue-200", "text-[#068bb4]");
     });
 }
 
