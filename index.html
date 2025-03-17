@@ -1,234 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NCWE 2025 - VNIT, Nagpur</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="/assets/output.css"> -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      .sidebar-content::-webkit-scrollbar {
-        display: none;
-      }
 
-      .sidebar-content {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-      }
-    </style>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NCWE 2025 - VNIT, Nagpur</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link rel="stylesheet" href="/assets/output.css"> -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <style>
+    .sidebar-content::-webkit-scrollbar {
+      display: none;
+    }
 
-  <body class="home-page flex bg-gray-100">
-    <!-- Sidebar -->
-    <aside
-      id="sidebar"
-      class="w-64 bg-[#068bb4] text-white p-4 fixed left-0 top-0 h-full overflow-hidden shadow-lg transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out z-50 overscroll-contain max-h-screen"
-    >
-      <div class="h-full overflow-y-scroll pr-4 sidebar-content">
-        <nav class="space-y-3">
-          <a href="/index.html">
-            <h1
-              id="sidebar-title"
-              class="text-yellow-300 text-2xl pl-4 font-bold mb-4 transition-all duration-300 ease-in-out"
-            >
-              NCWE-2025
-            </h1>
-          </a>
+    .sidebar-content {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
 
-          <!-- About Us Dropdown -->
-          <div class="dropdown">
-            <button
-              class="dropdown-toggle w-full flex items-center py-2 px-4 rounded-lg text-left hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg"
-            >
-              About Us <i class="fas fa-caret-down ml-2"></i>
-            </button>
-            <div class="dropdown-menu hidden bg-[#006db5] rounded-lg mt-2">
-              <a
-                href="/pages/about-us.html"
-                class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold"
-                >ABOUT HOST INSTITUTE</a
-              >
-              <a
-                href="/pages/about-us.html#about-department"
-                class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold"
-                >ABOUT THE DEPARTMENT OF APPLIED MECHANICS</a
-              >
-              <a
-                href="/pages/about-us.html#about-nagpur"
-                class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold"
-                >ABOUT NAGPUR</a
-              >
-            </div>
-          </div>
+<body class="home-page flex bg-gray-100">
+  <!-- Sidebar -->
+  <aside id="sidebar"
+    class="w-64 bg-[#068bb4] text-white p-4 fixed left-0 top-0 h-full overflow-hidden shadow-lg transform -translate-x-full lg:translate-x-0 transition-transform duration-300 ease-in-out z-50 overscroll-contain max-h-screen">
+    <div class="h-full overflow-y-scroll pr-4 sidebar-content">
+      <nav class="space-y-3">
+        <a href="/index.html">
+          <h1 id="sidebar-title"
+            class="text-yellow-300 text-2xl pl-4 font-bold mb-4 transition-all duration-300 ease-in-out">
+            NCWE-2025
+          </h1>
+        </a>
 
-          <a
-            href="/pages/conference-themes.html"
-            class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg"
-          >
-            Conference Themes</a
-          >
-
-          <a
-            href="/pages/important-dates.html"
-            class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg"
-          >
-            Important Dates</a
-          >
-
-          <!-- Speakers Dropdown -->
-          <div class="dropdown">
-            <button
-              class="dropdown-toggle w-full flex items-center py-2 px-4 rounded-lg text-left hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg"
-            >
-              Speakers
-              <i class="fas fa-caret-down ml-2"></i>
-            </button>
-            <div
-              class="dropdown-menu hidden bg-[#006db5] rounded-lg mt-2 space-y-1"
-            >
-              <a
-                href="/pages/plenary-speakers.html"
-                class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold"
-                >PLENARY SPEAKERS</a
-              >
-              <a
-                href="/pages/keynote-speakers.html"
-                class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold"
-                >KEYNOTE SPEAKERS</a
-              >
-            </div>
-          </div>
-
-          <a
-            href="/pages/schedule.html"
-            class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg"
-          >
-            Schedule</a
-          >
-
-          <!-- Committees Dropdown -->
-          <div class="dropdown">
-            <button
-              class="dropdown-toggle w-full flex items-center py-2 px-4 rounded-lg text-left hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg"
-            >
-              Committees
-              <i class="fas fa-caret-down ml-2"></i>
-            </button>
-            <div
-              class="dropdown-menu hidden bg-[#006db5] rounded-lg mt-2 space-y-1"
-            >
-              <a
-                href="/pages/national-advisory-committe.html"
-                class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold"
-                >ADVISORY BOARD</a
-              >
-              <a
-                href="/pages/conference-organizing-committe.html"
-                class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold"
-                >CONFERENCE ORGANIZERS</a
-              >
-              <a
-                href="/pages/scientific-committee.html"
-                class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold"
-                >SCIENTIFIC COMMITTEE</a
-              >
-            </div>
-          </div>
-
-          <a
-            href="/pages/sponsorship.html"
-            class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg"
-            >Sponsorship Details</a
-          >
-
-          <a
-            href="/pages/abstract-paper-submission.html"
-            class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg"
-            >Abstract & Paper Submission</a
-          >
-
-          <a
-            href="/pages/registration.html"
-            class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg"
-          >
-            Registration</a
-          >
-
-          <a
-            href="/pages/accommodation.html"
-            class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg"
-          >
-            Accommodation</a
-          >
-
-          <a
-            href="/pages/contact.html"
-            class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg"
-          >
-            Contact</a
-          >
-        </nav>
-      </div>
-    </aside>
-    <!-- Main Content Wrapper -->
-    <div class="lg:ml-64 flex flex-col w-full min-h-screen">
-      <!-- Header -->
-      <header class="relative py-2 px-2 shadow-md bg-gray-200">
-        <!-- Background Image with Opacity -->
-        <div
-          class="absolute inset-0 bg-[url('/assets/images/host-institute.jpg')] bg-cover bg-center opacity-40"
-        ></div>
-
-        <!-- Content -->
-        <div class="relative z-10">
+        <!-- About Us Dropdown -->
+        <div class="dropdown">
           <button
-            id="toggle-sidebar"
-            class="lg:hidden absolute top-4 left-0 bg-[#068bb4] text-white p-2 rounded-lg z-50"
-          >
-            <i class="fas fa-bars"></i>
+            class="dropdown-toggle w-full flex items-center py-2 px-4 rounded-lg text-left hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">
+            About Us <i class="fas fa-caret-down ml-2"></i>
           </button>
-          <div
-            class="container mx-auto flex justify-center flex-col items-center p-2"
-          >
-            <a href="/index.html"
-              ><img
-                src="/assets/images/logo13.png"
-                alt="Conference Logo"
-                class="w-48 md:54 lg:w-72"
-            /></a>
-            <div
-              class="text-center lg:mt-8 md:mt-6 flex flex-col gap-4 items-center p-1"
-            >
-              <h1
-                class="text-3xl lg:text-4xl bg-gradient-to-b from-[#027fc7] to-[#24509c] text-transparent bg-clip-text font-bold"
-              >
-                <span>National Conference on Wind Engineering</span>
-                <div>
-                  <span class="block lg:inline font-black">(NCWE-2025)</span>
-                </div>
-              </h1>
-              <p
-                class="text-lg max-w-80 lg:w-80 bg-[#24509c] text-center px-2 text-white p-1 rounded-3xl font-black mt-2"
-              >
-                14<sup>th</sup> & 15<sup>th</sup> November 2025
-              </p>
-              <p class="text-xl lg:text-2xl text-gray-800 mt-2 font-medium">
-                Department of Applied Mechanics, VNIT Nagpur
-              </p>
-            </div>
+          <div class="dropdown-menu hidden bg-[#006db5] rounded-lg mt-2">
+            <a href="/pages/about-us.html"
+              class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold">ABOUT HOST INSTITUTE</a>
+            <a href="/pages/about-us.html#about-department"
+              class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold">ABOUT THE DEPARTMENT OF
+              APPLIED MECHANICS</a>
+            <a href="/pages/about-us.html#about-nagpur"
+              class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold">ABOUT NAGPUR</a>
           </div>
         </div>
-      </header>
 
-      <!-- Content Section -->
-      <main class="flex-grow bg-white shadow-md m-2 relative">
-        <div class="mx-auto">
-          <div class="bg-white p-6">
-            <!-- <div class="text-center md:text-left flex flex-col items-center">
+        <a href="/pages/conference-themes.html"
+          class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">
+          Conference Themes</a>
+
+        <a href="/pages/important-dates.html"
+          class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">
+          Important Dates</a>
+
+        <!-- Speakers Dropdown -->
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle w-full flex items-center py-2 px-4 rounded-lg text-left hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">
+            Speakers
+            <i class="fas fa-caret-down ml-2"></i>
+          </button>
+          <div class="dropdown-menu hidden bg-[#006db5] rounded-lg mt-2 space-y-1">
+            <a href="/pages/plenary-speakers.html"
+              class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold">PLENARY SPEAKERS</a>
+            <a href="/pages/keynote-speakers.html"
+              class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold">KEYNOTE SPEAKERS</a>
+          </div>
+        </div>
+
+        <a href="/pages/schedule.html"
+          class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">
+          Schedule</a>
+
+        <!-- Committees Dropdown -->
+        <div class="dropdown">
+          <button
+            class="dropdown-toggle w-full flex items-center py-2 px-4 rounded-lg text-left hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">
+            Committees
+            <i class="fas fa-caret-down ml-2"></i>
+          </button>
+          <div class="dropdown-menu hidden bg-[#006db5] rounded-lg mt-2 space-y-1">
+            <a href="/pages/national-advisory-committe.html"
+              class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold">ADVISORY BOARD</a>
+            <a href="/pages/conference-organizing-committe.html"
+              class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold">CONFERENCE ORGANIZERS</a>
+            <a href="/pages/scientific-committee.html"
+              class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold">SCIENTIFIC COMMITTEE</a>
+          </div>
+        </div>
+
+        <a href="/pages/sponsorship.html"
+          class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">Sponsorship
+          Details</a>
+
+        <a href="/pages/abstract-paper-submission.html"
+          class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">Abstract
+          & Paper Submission</a>
+
+        <a href="/pages/registration.html"
+          class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">
+          Registration</a>
+
+        <a href="/pages/accommodation.html"
+          class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">
+          Accommodation</a>
+
+        <a href="/pages/contact.html"
+          class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">
+          Contact</a>
+      </nav>
+    </div>
+  </aside>
+  <!-- Main Content Wrapper -->
+  <div class="lg:ml-64 flex flex-col w-full min-h-screen">
+    <!-- Header -->
+    <header class="relative py-2 px-2 shadow-md bg-gray-200">
+      <!-- Background Image with Opacity -->
+      <div class="absolute inset-0 bg-[url('/assets/images/host-institute.jpg')] bg-cover bg-center opacity-40"></div>
+
+      <!-- Content -->
+      <div class="relative z-10">
+        <button id="toggle-sidebar" class="lg:hidden absolute top-4 left-0 bg-[#068bb4] text-white p-2 rounded-lg z-50">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="container mx-auto flex justify-center flex-col items-center p-2">
+          <a href="/index.html"><img src="/assets/images/logo13.png" alt="Conference Logo"
+              class="w-48 md:54 lg:w-72" /></a>
+          <div class="text-center lg:mt-8 md:mt-6 flex flex-col gap-4 items-center p-1">
+            <h1
+              class="text-3xl lg:text-4xl bg-gradient-to-b from-[#027fc7] to-[#24509c] text-transparent bg-clip-text font-bold">
+              <span>National Conference on Wind Engineering</span>
+              <div>
+                <span class="block lg:inline font-black">(NCWE-2025)</span>
+              </div>
+            </h1>
+            <p
+              class="text-lg max-w-80 lg:w-80 bg-[#24509c] text-center px-2 text-white p-1 rounded-3xl font-black mt-2">
+              14<sup>th</sup> & 15<sup>th</sup> November 2025
+            </p>
+            <p class="text-xl lg:text-2xl text-gray-800 mt-2 font-medium">
+              Department of Applied Mechanics, VNIT Nagpur
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Content Section -->
+    <main class="flex-grow bg-white shadow-md m-2 relative">
+      <div class="mx-auto">
+        <div class="bg-white p-6">
+          <!-- <div class="text-center md:text-left flex flex-col items-center">
               <h1 class="md:text-5xl text-3xl font-bold text-center text-[#068bb4]">
                 Chief Guest – NCWE 2025
               </h1>
@@ -253,81 +180,80 @@
                 <img src="/assets/images/guest-temp.jpg" alt="Guest" />
               </div>
             </div> -->
-            <div class="mx-auto py-6 flex flex-col items-center">
-              <div
-                class="bg-white rounded-xl overflow-hidden flex flex-col items-center max-w-4xl text-center p-2"
-              >
-                <!-- Countdown -->
-                <div
-                  id="countdown"
-                  class="bg-[#068bb4] text-white py-4 px-4 rounded-lg"
-                >
-                  <h2 class="text-xl font-semibold mb-4">
-                    Don't miss this opportunity to be part of NCWE 2025!
-                  </h2>
-                  <div
-                    class="flex flex-col justify-center text-3xl gap-4 md:gap-8 md:text-4xl font-bold md:flex-row"
-                  >
-                    <div>
-                      <span id="days">0</span>
-                      <p class="text-lg font-normal">Days</p>
-                    </div>
-                    <div>
-                      <span id="hours">0</span>
-                      <p class="text-lg font-normal">Hours</p>
-                    </div>
-                    <div>
-                      <span id="minutes">0</span>
-                      <p class="text-lg font-normal">Minutes</p>
-                    </div>
+          <div class="mx-auto py-6 flex flex-col items-center">
+            <div class="bg-white rounded-xl overflow-hidden flex flex-col items-center max-w-4xl text-center p-2">
+              <!-- Countdown -->
+              <div id="countdown" class="bg-[#068bb4] text-white py-4 px-4 rounded-lg">
+                <h2 class="text-xl font-semibold mb-4">
+                  Don't miss this opportunity to be part of NCWE 2025!
+                </h2>
+                <div class="flex flex-col justify-center text-3xl gap-4 md:gap-8 md:text-4xl font-bold md:flex-row">
+                  <div>
+                    <span id="days">0</span>
+                    <p class="text-lg font-normal">Days</p>
+                  </div>
+                  <div>
+                    <span id="hours">0</span>
+                    <p class="text-lg font-normal">Hours</p>
+                  </div>
+                  <div>
+                    <span id="minutes">0</span>
+                    <p class="text-lg font-normal">Minutes</p>
                   </div>
                 </div>
-                <div
-                  id="about-iswe"
-                  class="text-center md:text-left flex flex-col items-center mt-6"
-                >
-                  <hr class="my-2 border-t-2 w-12 border-gray-200" />
-                  <h1
-                    class="text-2xl md:text-3xl font-bold text-center text-[#068bb4]"
-                  >
-                    About ISWE
-                  </h1>
-                </div>
-                <div class="mx-auto py-2 flex flex-col">
-                  <p class="text-justify text-lg">
-                    The Indian Society of Wind Engineering (ISWE) was founded in
-                    1993 and at present it has members all over the country. The
-                    main activities of ISWE are to bring academicians,
-                    researchers, industry personnel and students under one
-                    umbrella towards the cause of wind engineering studies in
-                    the country.
-                  </p>
-                </div>
-                <h1
-                  class="text-2xl md:text-3xl font-bold text-center text-[#068bb4] mt-8"
-                >
+              </div>
+              <!-- About NCWE -->
+              <div class="text-center md:text-left flex flex-col items-center mt-6">
+                <h1 class="text-2xl md:text-3xl font-bold text-center text-[#068bb4] mt-8">
                   About NCWE 2025
                 </h1>
-                <div class="flex flex-col items-center">
-                  <hr class="my-4 border-t-2 w-12 border-gray-200" />
-                  <p class="text-justify mb-4 md:text-lg text-md">
-                    To be updated
-                  </p>
-                </div>
-                <div class="relative w-56">
-                  <a
-                    href="https://www.dropbox.com/scl/fi/8atur6wnpa6g9jm6rta7b/Brochure.pdf?rlkey=k84ju29rwiva78s13p3youfx3&st=oa7g7xe0&dl=1"
-                  >
-                    <button
-                      class="w-full flex items-center justify-center gap-2 px-2 text-lg py-2 text-md font-bold text-white bg-[#068bb4] rounded-lg shadow-lg transform transition-all duration-300 hover:bg-blue-600 hover:translate-y-[2px] hover:shadow-md active:translate-y-[4px] active:shadow-sm"
-                    >
-                      Download Brochure
-                      <i class="fas fa-arrow-down text-white text-lg"></i>
-                    </button>
-                  </a>
-                </div>
+              </div>
+              <div class="flex flex-col items-center">
+                <hr class="my-4 border-t-2 w-12 border-gray-200" />
+                <p class="text-justify mb-4 md:text-lg text-md">
+                  VNIT Nagpur invites delegates from academia and industry to participate in and submit their research
+                  work for the 11th National Conference on Wind Engineering (NCWE 2025), scheduled for 14th and 15th
+                  November 2025. Organized in association with the Indian Society of Wind Engineering (ISWE), this
+                  two-day conference aims to advance research, innovation, and applications in wind engineering. As a
+                  premier event in the field, NCWE 2025 provides a dynamic platform for academicians, researchers,
+                  industry professionals, and students to exchange insights on wind effects on structures, aerodynamics,
+                  and mitigation strategies. The conference will feature discussions on key themes such as wind-induced
+                  vibrations, computational wind engineering, AI/ML applications, high-rise buildings, urban wind
+                  environments, and disaster mitigation. NCWE 2025 will bring together leading experts to address
+                  contemporary challenges and advancements in wind engineering, fostering collaboration and innovation
+                  in this critical domain.
+                </p>
+              </div>
+              <!-- About ISWE -->
+              <div id="about-iswe" class="text-center md:text-left flex flex-col items-center mt-6">
+                <h1 class="text-2xl md:text-3xl font-bold text-center text-[#068bb4]">
+                  About ISWE
+                </h1>
+                <hr class="my-2 border-t-2 w-12 border-gray-200" />
+              </div>
+              <div class="mx-auto py-2 flex flex-col">
+                <p class="text-justify text-lg">
+                  The Indian Society of Wind Engineering (ISWE) was founded in
+                  1993 and at present it has members all over the country. The
+                  main activities of ISWE are to bring academicians,
+                  researchers, industry personnel and students under one
+                  umbrella towards the cause of wind engineering studies in
+                  the country.
+                </p>
+              </div>
+              <!-- Download Brochure Button -->
+              <div class="relative w-56 my-8">
+                <a
+                  href="https://www.dropbox.com/scl/fi/8atur6wnpa6g9jm6rta7b/Brochure.pdf?rlkey=k84ju29rwiva78s13p3youfx3&st=oa7g7xe0&dl=1">
+                  <button
+                    class="w-full flex items-center justify-center gap-2 px-2 text-lg py-2 text-md font-bold text-white bg-[#068bb4] rounded-lg shadow-lg transform transition-all duration-300 hover:bg-blue-600 hover:translate-y-[2px] hover:shadow-md active:translate-y-[4px] active:shadow-sm">
+                    Download Brochure
+                    <i class="fas fa-arrow-down text-white text-lg"></i>
+                  </button>
+                </a>
+              </div>
 
-                <!-- <h2 class="md:text-2xl text-xl font-bold text-center text-[#068bb4] mb-2">
+              <!-- <h2 class="md:text-2xl text-xl font-bold text-center text-[#068bb4] mb-2">
                 National Conference on Wind Engineering
               </h2>
               <p class="text-center font-black mb-2 md:text-lg text-md">
@@ -341,168 +267,164 @@
                   CALL FOR PAPER - SUBMISSION OPEN
                 </button>
               </div> -->
-              </div>
             </div>
-
-            <!-- Back to Top Button -->
-            <button
-              id="back-to-top"
-              class="fixed bottom-8 md:bottom-16 hidden right-4 bg-[#444] text-white p-4 rounded-md shadow-md transition-colors duration-300 opacity-0 pointer-events-none ease-in-out text-sm z-50"
-              aria-label="Back to top"
-            >
-              <i class="fas fa-chevron-up text-sm"></i>
-            </button>
           </div>
+
+          <!-- Back to Top Button -->
+          <button id="back-to-top"
+            class="fixed bottom-8 md:bottom-16 hidden right-4 bg-[#444] text-white p-4 rounded-md shadow-md transition-colors duration-300 opacity-0 pointer-events-none ease-in-out text-sm z-50"
+            aria-label="Back to top">
+            <i class="fas fa-chevron-up text-sm"></i>
+          </button>
         </div>
-      </main>
-      <!-- Footer -->
-      <div id="footer"></div>
-    </div>
-    <div
-      id="sidebar-overlay"
-      class="hidden fixed inset-0 bg-black opacity-50 z-30 lg:hidden"
-    ></div>
+      </div>
+    </main>
+    <!-- Footer -->
+    <div id="footer"></div>
+  </div>
+  <div id="sidebar-overlay" class="hidden fixed inset-0 bg-black opacity-50 z-30 lg:hidden"></div>
 
-    <script src="/script.js"></script>
-    <script>
-      function updateCountdown() {
-        const eventDate = new Date("November 14, 2025 00:00:00").getTime();
-        const now = new Date().getTime();
-        const timeLeft = eventDate - now;
+  <script src="/script.js"></script>
+  <script>
+    function updateCountdown() {
+      const eventDate = new Date("November 14, 2025 00:00:00").getTime();
+      const now = new Date().getTime();
+      const timeLeft = eventDate - now;
 
-        if (timeLeft <= 0) {
-          // Hide the countdown div when the event date has passed
-          document.getElementById("countdown").style.display = "none";
-          return;
-        }
+      if (timeLeft <= 0) {
+        // Hide the countdown div when the event date has passed
+        document.getElementById("countdown").style.display = "none";
+        return;
+      }
 
-        const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+      const hours = Math.floor(
+        (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+      );
+      const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+
+      document.getElementById("days").innerText = days;
+      document.getElementById("hours").innerText = hours;
+      document.getElementById("minutes").innerText = minutes;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+
+    // Sidebar Toggle button
+    function initSidebar() {
+      const sidebar = document.getElementById("sidebar");
+      const toggleButton = document.getElementById("toggle-sidebar");
+
+      // Create an overlay to detect outside clicks
+      let overlay = document.getElementById("sidebar-overlay");
+      if (!overlay) {
+        overlay = document.createElement("div");
+        overlay.id = "sidebar-overlay";
+        overlay.classList.add(
+          "fixed",
+          "inset-0",
+          "bg-black",
+          "bg-opacity-50",
+          "hidden",
+          "z-30"
         );
-        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-
-        document.getElementById("days").innerText = days;
-        document.getElementById("hours").innerText = hours;
-        document.getElementById("minutes").innerText = minutes;
+        document.body.appendChild(overlay);
       }
 
-      setInterval(updateCountdown, 1000);
-      updateCountdown();
+      function openSidebar() {
+        sidebar.classList.remove("-translate-x-full");
+        overlay.classList.remove("hidden");
+        document.body.style.overflow = "hidden"; // 🚀 Prevent background scrolling
+      }
 
-      // Sidebar Toggle button
-      function initSidebar() {
-        const sidebar = document.getElementById("sidebar");
-        const toggleButton = document.getElementById("toggle-sidebar");
+      function closeSidebar() {
+        sidebar.classList.add("-translate-x-full");
+        overlay.classList.add("hidden");
+        document.body.style.overflow = ""; // ✅ Allow scrolling again
+      }
 
-        // Create an overlay to detect outside clicks
-        let overlay = document.getElementById("sidebar-overlay");
-        if (!overlay) {
-          overlay = document.createElement("div");
-          overlay.id = "sidebar-overlay";
-          overlay.classList.add(
-            "fixed",
-            "inset-0",
-            "bg-black",
-            "bg-opacity-50",
-            "hidden",
-            "z-30"
-          );
-          document.body.appendChild(overlay);
+      function toggleSidebar() {
+        if (sidebar.classList.contains("-translate-x-full")) {
+          openSidebar();
+        } else {
+          closeSidebar();
         }
+      }
 
-        function openSidebar() {
+      if (!sidebar || !toggleButton || !overlay) return; // Prevent errors
+
+      // Toggle sidebar on button click
+      toggleButton.addEventListener("click", function (event) {
+        event.stopPropagation();
+        toggleSidebar();
+      });
+
+      // Close sidebar when clicking outside or on overlay
+      overlay.addEventListener("click", closeSidebar);
+      document.addEventListener("click", function (event) {
+        if (
+          !sidebar.contains(event.target) &&
+          !toggleButton.contains(event.target)
+        ) {
+          closeSidebar();
+        }
+      });
+
+      // Prevent scrolling issues on mobile (iOS/Android fix)
+      sidebar.addEventListener("touchmove", function (e) {
+        e.stopPropagation(); // Stop sidebar touch scrolling from affecting the page
+      });
+
+      overlay.addEventListener("touchmove", function (e) {
+        e.preventDefault(); // Prevent scrolling when touching overlay
+      });
+
+      // Keep sidebar open on large screens (lg)
+      window.addEventListener("resize", function () {
+        if (window.innerWidth >= 1024) {
           sidebar.classList.remove("-translate-x-full");
-          overlay.classList.remove("hidden");
-          document.body.style.overflow = "hidden"; // 🚀 Prevent background scrolling
-        }
-
-        function closeSidebar() {
-          sidebar.classList.add("-translate-x-full");
           overlay.classList.add("hidden");
-          document.body.style.overflow = ""; // ✅ Allow scrolling again
+          document.body.style.overflow = ""; // Ensure scrolling is re-enabled
+        } else {
+          sidebar.classList.add("-translate-x-full");
         }
+      });
+    }
+    document.addEventListener("DOMContentLoaded", initSidebar);
+    // DropdownToggle
+    function initDropdowns() {
+      const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
 
-        function toggleSidebar() {
-          if (sidebar.classList.contains("-translate-x-full")) {
-            openSidebar();
-          } else {
-            closeSidebar();
-          }
-        }
+      dropdownToggles.forEach((toggle) => {
+        toggle.addEventListener("click", function (event) {
+          event.stopPropagation(); // Prevents the click from propagating to the document listener
 
-        if (!sidebar || !toggleButton || !overlay) return; // Prevent errors
+          const dropdownMenu = this.nextElementSibling; // Get the associated dropdown
 
-        // Toggle sidebar on button click
-        toggleButton.addEventListener("click", function (event) {
-          event.stopPropagation();
-          toggleSidebar();
-        });
-
-        // Close sidebar when clicking outside or on overlay
-        overlay.addEventListener("click", closeSidebar);
-        document.addEventListener("click", function (event) {
-          if (
-            !sidebar.contains(event.target) &&
-            !toggleButton.contains(event.target)
-          ) {
-            closeSidebar();
-          }
-        });
-
-        // Prevent scrolling issues on mobile (iOS/Android fix)
-        sidebar.addEventListener("touchmove", function (e) {
-          e.stopPropagation(); // Stop sidebar touch scrolling from affecting the page
-        });
-
-        overlay.addEventListener("touchmove", function (e) {
-          e.preventDefault(); // Prevent scrolling when touching overlay
-        });
-
-        // Keep sidebar open on large screens (lg)
-        window.addEventListener("resize", function () {
-          if (window.innerWidth >= 1024) {
-            sidebar.classList.remove("-translate-x-full");
-            overlay.classList.add("hidden");
-            document.body.style.overflow = ""; // Ensure scrolling is re-enabled
-          } else {
-            sidebar.classList.add("-translate-x-full");
-          }
-        });
-      }
-      document.addEventListener("DOMContentLoaded", initSidebar);
-      // DropdownToggle
-      function initDropdowns() {
-        const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
-
-        dropdownToggles.forEach((toggle) => {
-          toggle.addEventListener("click", function (event) {
-            event.stopPropagation(); // Prevents the click from propagating to the document listener
-
-            const dropdownMenu = this.nextElementSibling; // Get the associated dropdown
-
-            // Close all other dropdowns first
-            document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-              if (menu !== dropdownMenu) {
-                menu.classList.add("hidden");
-              }
-            });
-
-            // Toggle visibility of the clicked dropdown
-            dropdownMenu.classList.toggle("hidden");
-          });
-        });
-
-        // Close dropdowns when clicking outside
-        document.addEventListener("click", function () {
+          // Close all other dropdowns first
           document.querySelectorAll(".dropdown-menu").forEach((menu) => {
-            menu.classList.add("hidden");
+            if (menu !== dropdownMenu) {
+              menu.classList.add("hidden");
+            }
           });
-        });
-      }
 
-      // Initialize sidebar on first page load
-      document.addEventListener("DOMContentLoaded", initDropdowns);
-    </script>
-  </body>
+          // Toggle visibility of the clicked dropdown
+          dropdownMenu.classList.toggle("hidden");
+        });
+      });
+
+      // Close dropdowns when clicking outside
+      document.addEventListener("click", function () {
+        document.querySelectorAll(".dropdown-menu").forEach((menu) => {
+          menu.classList.add("hidden");
+        });
+      });
+    }
+
+    // Initialize sidebar on first page load
+    document.addEventListener("DOMContentLoaded", initDropdowns);
+  </script>
+</body>
+
 </html>
