@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accommodation</title>
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/assets/output.css">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
@@ -54,9 +54,49 @@
                 Accommodation
               </h1>
             </div>
-            <div class="mx-auto px-12 py-6 flex flex-col text-center">
-              Link will be updated soon.
-            </div>
+            <!-- -------------------------Table------------------------------------ -->
+            <div class="container mx-auto mt-8 overflow-hidden md:px-6">
+              <div class="overflow-x-auto">
+                <div class="mb-6">
+                  <p class="text-center">
+                    Guest rooms are available inside VNIT campus on a first cum first serve basis. The details are given below.
+                  </p>
+              </div>
+                  <table class="w-full border-collapse border border-gray-300 shadow-lg">
+                      <thead>
+                          <tr class="bg-[#068bb4] text-white text-sm sm:text-base">
+                              <th class=" sm:p-2 border border-gray-300">Location</th>
+                              <th class=" sm:p-2 border border-gray-300">Type of room</th>
+                              <th class=" sm:p-2 border border-gray-300">No of available rooms</th>
+                              <th class=" sm:p-2 border border-gray-300">Rate</th>
+                          </tr>
+                      </thead>
+                      <tbody class="bg-white text-center text-sm sm:text-base">
+                          <tr class="border border-gray-300 bg-gray-100">
+                              <td class=" sm:p-2">Guest room in Hostel Block 2</td>
+                              <td class=" sm:p-2">Twin sharing for gents/ family</td>
+                              <td class=" sm:p-2">30</td>
+                              <td class=" sm:p-2">400 / bed non-AC
+                                600 / bed AC
+                                </td>
+                          </tr>
+                          <tr class="border border-gray-300">
+                              <td class=" sm:p-2">Guest room in Girls Hostel 2</td>
+                              <td class=" sm:p-2">Twin sharing only for ladies</td>
+                              <td class=" sm:p-2">50</td>
+                              <td class=" sm:p-2">400 / bed non-AC 
+                                600 / bed AC
+                                </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+              <div class="mt-6">
+                  <p class="text-center">
+                      Participants can book the rooms after successful registration. The detailed procedure for booking will be updated soon.
+                  </p>
+              </div>
+          </div>
         </div>
         <!-- Back to Top Button -->
         <button id="back-to-top"
