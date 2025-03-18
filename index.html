@@ -32,24 +32,6 @@
             NCWE-2025
           </h1>
         </a>
-
-        <!-- About Us Dropdown -->
-        <div class="dropdown">
-          <button
-            class="dropdown-toggle w-full flex items-center py-2 px-4 rounded-lg text-left hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">
-            About Us <i class="fas fa-caret-down ml-2"></i>
-          </button>
-          <div class="dropdown-menu hidden bg-[#006db5] rounded-lg mt-2">
-            <a href="/pages/about-us.html"
-              class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold">ABOUT HOST INSTITUTE</a>
-            <a href="/pages/about-us.html#about-department"
-              class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold">ABOUT THE DEPARTMENT OF
-              APPLIED MECHANICS</a>
-            <a href="/pages/about-us.html#about-nagpur"
-              class="block px-4 py-2 hover:bg-blue-200 hover:text-[#068bb4] font-semibold">ABOUT NAGPUR</a>
-          </div>
-        </div>
-
         <a href="/pages/conference-themes.html"
           class="block py-2 px-4 rounded-lg hover:bg-blue-200 hover:text-[#068bb4] transition duration-300 font-semibold md:text-lg">
           Conference Themes</a>
@@ -181,36 +163,47 @@
               </div>
             </div> -->
           <div class="mx-auto py-6 flex flex-col items-center">
+             
             <div class="bg-white rounded-xl overflow-hidden flex flex-col items-center max-w-4xl text-center p-2">
-              <!-- Countdown -->
-              <div id="countdown" class="bg-[#068bb4] text-white py-4 px-4 rounded-lg">
-                <h2 class="text-xl font-semibold mb-4">
-                  Don't miss this opportunity to be part of NCWE 2025!
-                </h2>
-                <div class="flex flex-col justify-center text-3xl gap-4 md:gap-8 md:text-4xl font-bold md:flex-row">
-                  <div>
-                    <span id="days">0</span>
-                    <p class="text-lg font-normal">Days</p>
-                  </div>
-                  <div>
-                    <span id="hours">0</span>
-                    <p class="text-lg font-normal">Hours</p>
-                  </div>
-                  <div>
-                    <span id="minutes">0</span>
-                    <p class="text-lg font-normal">Minutes</p>
+                <!-- Countdown Timer -->
+                <div id="countdown" class="bg-[#068bb4] text-white py-4 px-4 rounded-lg">
+                  <h2 class="text-xl font-semibold mb-4">
+                    Don't miss this opportunity to be part of NCWE 2025!
+                  </h2>
+                  <div class="flex flex-col justify-center text-3xl gap-4 md:gap-8 md:text-4xl font-bold md:flex-row">
+                    <div>
+                      <span id="days">0</span>
+                      <p class="text-lg font-normal">Days</p>
+                    </div>
+                    <div>
+                      <span id="hours">0</span>
+                      <p class="text-lg font-normal">Hours</p>
+                    </div>
+                    <div>
+                      <span id="minutes">0</span>
+                      <p class="text-lg font-normal">Minutes</p>
+                    </div>
                   </div>
                 </div>
-              </div>
+                <!-- Download Brochure Button -->
+             <div id="download-btn" class="mt-8 xl:absolute xl:top-6 xl:right-10"> <!-- absolute top-15 right-10 -->
+              <a href="https://www.dropbox.com/scl/fi/8atur6wnpa6g9jm6rta7b/Brochure.pdf?rlkey=k84ju29rwiva78s13p3youfx3&st=oa7g7xe0&dl=1">
+                <button
+                  class="w-full flex items-center justify-center gap-2 px-4 py-2 text-md font-bold text-white bg-[#068bb4] rounded-lg shadow-lg transform transition-all duration-300 hover:bg-blue-600 hover:translate-y-[2px] hover:shadow-md active:translate-y-[4px] active:shadow-sm">
+                  Download Brochure
+                  <i class="fas fa-arrow-down text-white text-lg"></i>
+                </button>
+              </a>
+            </div>
               <!-- About NCWE -->
               <div class="text-center md:text-left flex flex-col items-center mt-6">
-                <h1 class="text-2xl md:text-3xl font-bold text-center text-[#068bb4] mt-8">
+                <hr class="border-t-2 w-12 border-gray-200 my-4" />
+                <h1 class="text-2xl md:text-3xl font-bold text-center text-[#068bb4]">
                   About NCWE 2025
                 </h1>
               </div>
               <div class="flex flex-col items-center">
-                <hr class="my-4 border-t-2 w-12 border-gray-200" />
-                <p class="text-justify mb-4 md:text-lg text-md">
+                <p class="text-justify mb-4 md:text-lg text-md mt-4">
                   VNIT Nagpur invites delegates from academia and industry to participate in and submit their research
                   work for the 11th National Conference on Wind Engineering (NCWE 2025), scheduled for 14th and 15th
                   November 2025. Organized in association with the Indian Society of Wind Engineering (ISWE), this
@@ -225,14 +218,14 @@
                 </p>
               </div>
               <!-- About ISWE -->
-              <div id="about-iswe" class="text-center md:text-left flex flex-col items-center mt-6">
+              <div id="about-iswe" class="text-center md:text-left flex flex-col items-center mt-2">
+                <hr class="my-4 border-t-2 w-12 border-gray-200" />
                 <h1 class="text-2xl md:text-3xl font-bold text-center text-[#068bb4]">
                   About ISWE
                 </h1>
-                <hr class="my-2 border-t-2 w-12 border-gray-200" />
               </div>
               <div class="mx-auto py-2 flex flex-col">
-                <p class="text-justify text-lg">
+                <p class="text-justify text-lg mt-4">
                   The Indian Society of Wind Engineering (ISWE) was founded in
                   1993 and at present it has members all over the country. The
                   main activities of ISWE are to bring academicians,
@@ -241,18 +234,107 @@
                   the country.
                 </p>
               </div>
-              <!-- Download Brochure Button -->
-              <div class="relative w-56 my-8">
-                <a
-                  href="https://www.dropbox.com/scl/fi/8atur6wnpa6g9jm6rta7b/Brochure.pdf?rlkey=k84ju29rwiva78s13p3youfx3&st=oa7g7xe0&dl=1">
-                  <button
-                    class="w-full flex items-center justify-center gap-2 px-2 text-lg py-2 text-md font-bold text-white bg-[#068bb4] rounded-lg shadow-lg transform transition-all duration-300 hover:bg-blue-600 hover:translate-y-[2px] hover:shadow-md active:translate-y-[4px] active:shadow-sm">
-                    Download Brochure
-                    <i class="fas fa-arrow-down text-white text-lg"></i>
-                  </button>
-                </a>
-              </div>
-
+              <!-- About Host Institute -->
+                <div id="about-institute" class="text-center md:text-left flex flex-col items-center mt-6">
+                  <hr class="my-2 border-t-2 w-12 border-gray-200" />
+                  <h1 class="text-2xl md:text-3xl font-bold text-center text-[#068bb4]">
+                    About Host Institute
+                  </h1>
+                </div>
+                <div class="mx-auto py-6 flex flex-col">
+                  <p class="text-justify text-lg">
+                    Visvesvaraya National Institute of Technology (VNIT), Nagpur,
+                    named after the eminent engineer, planner, and statesman of the
+                    country Sir M. Visvesvaraya, is one of the thirty National
+                    Institutes of Technology in the country. It has nine
+                    undergraduate, eighteen post graduate programs with a total
+                    student strength of 5000, which includes about 500 PhD scholars.
+                    A lush-green VNIT campus is sprawled over 214 acres, located
+                    centrally in the city of Nagpur, with residential facility for
+                    about 3500 students. Historically, this institute started as a
+                    Government Engineering College in 1956, got converted into
+                    Regional Engineering College in 1960 and eventually got the
+                    status of National Institute in 2002. Today, VNIT is Institute
+                    of National importance and has ascended itself from a
+                    teaching-oriented campus to a blend of research and teaching.
+                    Institute has many R&D projects funded through Government and
+                    private agencies.
+                  </p>
+                </div>
+                <div class="flex justify-center px-4">
+                  <img src="/assets/images/host-institute.jpg" alt="VNIT image" class="rounded-2xl shadow-xl md:w-3/5" />
+                </div>
+                <!-- About the Department -->
+                <div id="about-department" class="text-center md:text-left mt-8 flex flex-col items-center">
+                  <hr class="my-2 border-t-2 w-12 border-gray-200" />
+                  <h1 class="text-2xl md:text-3xl font-bold text-center text-[#068bb4]">
+                    About the Department of Applied Mechanics
+                  </h1>
+                </div>
+                <div class="mx-auto py-6 flex flex-col">
+                  <p class="text-justify text-lg">
+                    Established in 1962, the Department of Applied Mechanics offers
+                    two post graduate programs i.e. M. Tech. in Structural
+                    Engineering and M. Tech. in Structural Dynamics and Earthquake
+                    Engineering. The department offers structural engineering
+                    courses to
+                    <strong> B. Tech. (Civil) and B.Arch. programs </strong> along
+                    with the course of Engineering Mechanics to the first year B.
+                    Tech. students. <br />
+                    Department is actively involved in various R & D projects from
+                    Government, Public and Private Agencies. Department is pursuing
+                    activities related to earthquake, wind, concrete corrosion,
+                    advanced engineered materials, blast, impact and fire
+                    engineering. Department team has visited earthquake affected
+                    areas such as <strong>Bhuj, Andaman and Nepal.</strong> <br />
+                    <span class="pt-4">Consultancy work of structural design and scrutiny of
+                      structures like water tanks, bridges, buildings, and other
+                      structures are being undertaken by the department. The
+                      department is also involved in the structural health
+                      assessment of various structures. Department has facilities
+                      for testing of materials, proof load testing, non-destructive
+                      testing, vibration measurement of structures.</span>
+                  </p>
+                </div>
+                <div class="flex justify-center px-4">
+                  <img src="/assets/images/department.png" alt="VNIT image" class="rounded-2xl shadow-xl md:w-3/5" />
+                </div>
+                <!-- About NAGPUR -->
+                <div id="about-nagpur" class="text-center md:text-left mt-8 flex flex-col items-center">
+                  <hr class="my-2 border-t-2 w-12 border-gray-200" />
+                  <h1 class="text-2xl md:text-3xl font-bold text-center text-[#068bb4]">
+                    About NAGPUR
+                  </h1>
+                </div>
+                <div class="mx-auto py-6 flex flex-col">
+                  <p class="text-justify text-lg">
+                    Nagpur is the third largest city and the winter capital of
+                    Maharashtra State. Nagpur lies precisely at the centre of the
+                    country with the Zero Mile Marker indicating the geographical
+                    centre of India. In the latest rankings of 100 developing smart
+                    cities given by the Union Ministry of Urban Development, Nagpur
+                    stood first in Maharashtra state and second in India. Nagpur
+                    Metro has entered Guinness Book of World Records for being the
+                    longest double-decker viaduct metro measuring 3.14 km on Wardha
+                    Road. Known as the “Orange City”, Nagpur has officially become
+                    the greenest, safest and most technologically developed city in
+                    the Maharashtra state. Nagpur is also known as the, “Tiger
+                    Capital of India” as it connects many Tiger Reserves in India to
+                    the world. It is well connected to all the major cities of the
+                    country by air and has also international connectivity. Needless
+                    to say, Nagpur is a major railway junction of North-South and
+                    East-West railway lines.
+                  </p>
+                </div>
+                <div class="flex flex-col items-center justify-center px-4">
+                  <img src="/assets/images/nagpur.jpg" alt="VNIT image" class="rounded-2xl shadow-xl w-full max-w-xs md:max-w-xl" />
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-2 mx-auto max-w-md md:max-w-lg mt-4">
+                  <img src="/assets/images/dimaond-rail.jpg" alt="VNIT image" class="rounded-2xl shadow-xl w-full" />
+                  <img src="/assets/images/metro.jpg" alt="VNIT image" class="rounded-2xl shadow-xl w-full" />
+                  <img src="/assets/images/koradi-thermal.jpg" alt="VNIT image" class="rounded-2xl shadow-xl w-full" />
+                  <img src="/assets/images/tiger.jpg" alt="VNIT image" class="rounded-2xl shadow-xl w-full" />
+                </div>
               <!-- <h2 class="md:text-2xl text-xl font-bold text-center text-[#068bb4] mb-2">
                 National Conference on Wind Engineering
               </h2>
@@ -269,7 +351,6 @@
               </div> -->
             </div>
           </div>
-
           <!-- Back to Top Button -->
           <button id="back-to-top"
             class="fixed bottom-8 md:bottom-16 hidden right-4 bg-[#444] text-white p-4 rounded-md shadow-md transition-colors duration-300 opacity-0 pointer-events-none ease-in-out text-sm z-50"
